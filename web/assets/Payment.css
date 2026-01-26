@@ -1,0 +1,115 @@
+/* ---------- BASE & THEME ---------- */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('Back_image.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 50px; background: rgb(253, 0, 0); box-shadow: 0 2px 10px #000;
+}
+.logo { color: #000; font-size: 28px; font-weight: 700; }
+.logo span { color: #ff0000; background: #000; padding: 2px 6px; border-radius: 8px; }
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { text-decoration: none; color: #fff; font-weight: bold; transition: 0.3s; }
+.nav-links a:hover, .nav-links .active { color: #000; background: #fff; padding: 6px 12px; border-radius: 8px; }
+
+/* ---------- PAYMENT CARD ---------- */
+.payment-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.payment-card {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.payment-card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+
+.subtitle {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* ---------- RECEIPT BOX ---------- */
+.receipt-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #fff;
+}
+
+.price {
+  font-weight: 700;
+  color: #ff0000;
+  font-size: 1.4rem;
+}
+
+/* ---------- BUTTON ---------- */
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pay-btn:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.secure-text {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBro - Login</title>
+    <link rel="stylesheet" href="../assets/Login.css">
+    
+</head>
+
+<body>      
+
+    <div class="Login_Page">
+        <form action="../auth/login.php" method="POST">
+            <h1>Gym<span>Bro</span></h1>
+            <p class="subtitle">Sign in to your training portal</p>
+
+            <div class="input-group">
+                <input type="text" class="inputs" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" class="inputs" name="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="button">Login</button>
+
+            <div class="form-footer">
+                <p>New to GymBro?</p>
+                <a href="../Register_page/index.html">Create an account</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

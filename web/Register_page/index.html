@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GymBro - Registration</title>
+  <link rel="stylesheet" href="../assets/Register.css">
+  
+</head>
+
+<body>
+  <div class="Registration_Page"> 
+    <h1>Gym<span>Bro</span></h1>
+    <p class="subtitle">Let's go GYM BRO!</p>
+
+    <form action="../auth/register.php" method="POST">
+      <input type="text" name="username" class="inputs" placeholder="Username" required>
+      <input type="text" name="full_name" class="inputs" placeholder="Full Name" required>
+      <input type="email" name="email" class="inputs" placeholder="Email" required>
+      <input type="password" name="password" class="inputs" placeholder="Password" required>
+      <input type="password" name="password_confirm" class="inputs" placeholder="Confirm Password" required>
+      <button type="submit" class="button">Register</button>
+    </form>
+
+    <div class="form-footer">
+      <p>Already have an account?</p>
+      <a href="../Login_page/index.html">Login here</a>
+    </div>
+  </div>
+</body>
+</html>

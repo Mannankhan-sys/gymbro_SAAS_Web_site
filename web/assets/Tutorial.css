@@ -1,0 +1,166 @@
+/* ---------- BASE STYLE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('../assets/Back_image.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgb(253, 0, 0);
+  box-shadow: 0 2px 10px #000;
+}
+
+.logo {
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ff0000;
+  background: #000;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #000;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* ---------- TUTORIALS PAGE (Main) ---------- */
+main.tutorials {
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+main.tutorials h1 {
+  color: #000;
+  font-size: 2.5rem;
+  background: rgba(255, 0, 0, 0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+main.tutorials p {
+  color: #eee;
+  margin: 20px 0 40px;
+}
+
+/* ---------- SECTION HEADINGS (Matches Meal Sections) ---------- */
+.tutorial-section {
+  margin-bottom: 60px;
+}
+
+.tutorial-section h2 {
+  color: #fff;
+  background: rgba(255, 0, 0, 0.85);
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px #000;
+  font-size: 1.5rem;
+}
+
+/* ---------- GRID CONTAINER ---------- */
+.tutorial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ---------- CARD STYLING (Matches Meal Cards) ---------- */
+.tutorial-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(255, 0, 0, 0.7);
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px #000;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tutorial-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 0, 0, 0.85);
+}
+
+.tutorial-card h3 {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.tutorial-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* ---------- LIST & LINK STYLING ---------- */
+ol {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ol li {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.tutorial-card a {
+  color: #ffbdbd;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.tutorial-card a:hover {
+  color: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #ff0000;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}

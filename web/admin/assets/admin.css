@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.admin-header {
+  background: black;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #222;
+  position: fixed;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.dashboard {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}

@@ -1,0 +1,128 @@
+/* ---------- BASE STYLE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Use your background image path correctly */
+  background: url('../assets/Back_image.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  
+  /* CRITICAL FOR ALIGNMENT: Centers the card vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  overflow: hidden; /* Prevents unwanted scrollbars */
+}
+
+/* ---------- LOGIN CONTAINER ---------- */
+.Login_Page {
+  width: 100%;
+  max-width: 400px; /* Limits width so it doesn't stretch too far */
+  padding: 40px;
+  /* Dark Glassmorphism Effect */
+  background: rgba(0, 0, 0, 0.85); 
+  border: 2px solid rgba(255, 0, 0, 0.7); 
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.Login_Page h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+ 
+
+/* Red "Bro" Accent to match your Logo */
+.Login_Page h1 span {
+  color: #ff0000;
+  background: #000;
+  padding: 0 10px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+.subtitle {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  width: 100%;
+  background-color: #000; /* Solid black to contrast with card */
+  border-radius: 12px;
+  padding: 15px;
+  border: 2px solid #333; 
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputs:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* ---------- BUTTON ---------- */
+.button {
+  width: 100%;
+  background: #ff0000;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 30px; /* Pill shape like your screenshot */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* ---------- FOOTER LINKS ---------- */
+.form-footer {
+  margin-top: 25px;
+}
+
+.form-footer p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.Login_Page a {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 8px;
+  transition: 0.3s;
+}
+
+.Login_Page a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

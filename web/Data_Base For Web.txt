@@ -1,0 +1,62 @@
+CREATE DATABASE IF NOT EXISTS gymbro_db;
+USE gymbro_db;
+
+CREATE TABLE admin (
+  admin_id INT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
+INSERT INTO admin (username, password)
+VALUES ('admin', '$2y$10$VbFZxX7Qe3YhZyG9nKqG7uU6Y4hQp8c8q1o5YpXG1rK7ZrQbZp9K');
+INSERT INTO admin (username, password)
+VALUES ('admin', '$2y$10$VbFZxX7Qe3YhZyG9nKqG7uU6Y4hQp8c8q1o5YpXG1rK7ZrQbZp9K');
+(This is a hashed password for admin123)
+
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    subscription_id INT DEFAULT NULL,
+    assigned_trainer INT DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE subscriptions (
+    subscription_id INT AUTO_INCREMENT PRIMARY KEY,
+    plan_name VARCHAR(50) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    features TEXT NOT NULL
+);
+
+
+INSERT INTO subscriptions (plan_name, price, features) VALUES
+('Silver', 19.99, 'Access to meals and workout tutorials'),
+('Gold', 39.99, 'Meals, tutorials, personal trainer, priority support');
+
+
+CREATE TABLE trainers (
+    trainer_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    specialization VARCHAR(100) NOT NULL,
+    current_user INT DEFAULT NULL
+);
+
+
+INSERT INTO trainers (name, specialization) VALUES
+('Trainer_1', 'Strength & Muscle Building'),
+('Trainer_2', 'Weight Loss & Cardio');
+
+
+
+CREATE TABLE payments (
+    payment_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    subscription_id INT NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    payment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (subscription_id) REFERENCES subscriptions(subscription_id)
+);

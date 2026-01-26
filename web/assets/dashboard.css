@@ -1,0 +1,160 @@
+/* ---------- CORE ---------- */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Path should be relative to the CSS file's location */
+    background: url('Back_image.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- WRAPPER ---------- */
+.dashboard-wrapper {
+    flex: 1;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ---------- WELCOME HERO CARD ---------- */
+.welcome-card {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #ff0000;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(255, 0, 0, 0.2);
+    text-align: left;
+}
+
+.welcome-content h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.welcome-content h1 span {
+    color: #ff0000;
+}
+
+.welcome-content p {
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+    background: transparent;
+    border: 2px solid #ff0000;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.logout-btn:hover {
+    background: #ff0000;
+    color: #000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* ---------- GRID & CARDS ---------- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.dash-card {
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.dash-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff0000;
+}
+
+.card-icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+.dash-card h2 {
+    color: #ff0000;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.dash-card hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+/* DATA STYLING */
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.label { color: #888; font-weight: 600; }
+.value { color: #fff; }
+
+.plan-status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+.price-tag { color: #aaa; font-size: 0.9rem; margin-top: 5px; }
+
+.empty-text { color: #555; font-style: italic; }
+
+.cta-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta-link:hover { text-decoration: underline; }
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #000;
+    border-top: 2px solid #ff0000;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .welcome-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
