@@ -187,7 +187,7 @@ User → Form Input → PHP Processing → MySQL → Response → Dashboard
 
 Mannan Khan  
 BS Software Engineering  
-Final Year Project  
+ 
 
 ---
 
